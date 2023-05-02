@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.hero-container {
+    max-width: min(33%, 300px);
+}
+
+.hero-img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.hero-div {
+    position: absolute;
+    z-index: 1;
+}

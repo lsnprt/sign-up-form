@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="hero-container">
+        <img class="hero-img" 
+         src="./media/cristina-gottardi-9TaYFMMapbA-unsplash.jpg"/>
+        <div class="hero-div">
+            <h1 class="hero-title">LOGO HERE</h1>
+        </div>
+    </div>
+    <main>
+        <div class="pre-form">
+            <p>
+                This is not a real online service! You know you
+                need something like this in your life to help you realize your
+                deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+            <form action="" id="sign-up-form">
+                <h2>Let's do this!</h2>
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input 
+                     id="first-name"
+                     type="text"
+                     name="firs-name"
+                     placeholder="Your first name"
+                     required>
+                </div>
+                <div class="form-row">
+                    <label for="last-name">Last Name</label>
+                    <input 
+                     id="last-name"
+                     type="text"
+                     name="last-name"
+                     placeholder="Your last name"
+                     required>
+                </div>
+                <div class="form-row">
+                    <label for="mail">Email</label>
+                    <input 
+                     id="mail"
+                     type="email"
+                     name="mail"
+                     placeholder="Email@example.com"
+                     required>
+                </div>
+                <div class="form-row">
+                    <label for="phone-number">Phone Number</label>
+                    <input 
+                     id="phone-number"
+                     type="tel"
+                     name="phone-number"
+                     placeholder="070 123 1234"
+                     minlength="6"
+                     maxlength="13"
+                     required>
+                </div>
+                <div class="form-row">
+                    <label for="pwd">Password</label>
+                    <input 
+                     id="pwd"
+                     type="password"
+                     name="pwd"
+                     minlength="8"
+                     maxlength="20"
+                     required>
+                </div>
+                <div class="form-row">
+                    <label for="pwd-repeat">Confirm Password</label>
+                    <input 
+                     id="pwd-repeat"
+                     type="password"
+                     name="pwd-repeat"
+                     minlength="8"
+                     maxlength="20"
+                     required>
+                </div>
+            </form>
+        </div>
+        <div class="post-form">
+            <button class="create-btn" form="sign-up-form">
+                Create Account
+            </button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+        <footer>
+            <p>lsnprt &copy; 2023</p>
+        </footer>
+    </main>
+</body>
+</html>
