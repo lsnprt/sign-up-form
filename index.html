@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="hero-container">
-        <img class="hero-img" 
-         src="./media/cristina-gottardi-9TaYFMMapbA-unsplash.jpg"/>
-        <div class="hero-div">
-            <h1 class="hero-title">LOGO HERE</h1>
+    <div class="hero-wrapper">
+        <div class="hero-container">
+            <div class="hero-div">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920">
+                    <style>
+                        .st0{fill:none}.st1{fill:none;stroke:#EAD6D0ff;stroke-width:100;stroke-linecap:square;stroke-linejoin:square;stroke-miterlimit:10}
+                    </style>
+                    <path class="st0" d="M964.4 1027.4l274.7-340.6 464 600H216.9l484.2-600z" id="Layer_5"/>
+                    <g id="STROKES">
+                        <path class="st1" d="M964.4 1027.4l99.7 128.9"/>
+                        <path class="st1" d="M216.9 1286.8l484.2-600 263.3 340.6 274.7-340.6 464 600"/>
+                    </g>
+                </svg>
+                <h1 class="hero-title">DO LO</h1>
+            </div>
         </div>
     </div>
     <main>
@@ -22,11 +32,12 @@
                 need something like this in your life to help you realize your
                 deepest dreams. Sign up <em>now</em> to get started.
             </p>
+            <br>
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form-container">
+            <h2>Let's do this!</h2>
             <form action="" id="sign-up-form">
-                <h2>Let's do this!</h2>
                 <div class="form-row">
                     <label for="first-name">First Name</label>
                     <input 
@@ -35,6 +46,7 @@
                      name="firs-name"
                      placeholder="Your first name"
                      required>
+                     <div class="error"></div>
                 </div>
                 <div class="form-row">
                     <label for="last-name">Last Name</label>
@@ -44,6 +56,7 @@
                      name="last-name"
                      placeholder="Your last name"
                      required>
+                     <div class="error"></div>
                 </div>
                 <div class="form-row">
                     <label for="mail">Email</label>
@@ -53,6 +66,7 @@
                      name="mail"
                      placeholder="Email@example.com"
                      required>
+                     <div class="error"></div>
                 </div>
                 <div class="form-row">
                     <label for="phone-number">Phone Number</label>
@@ -64,6 +78,7 @@
                      minlength="6"
                      maxlength="13"
                      required>
+                     <div class="error"></div>
                 </div>
                 <div class="form-row">
                     <label for="pwd">Password</label>
@@ -73,7 +88,9 @@
                      name="pwd"
                      minlength="8"
                      maxlength="20"
+                     placeholder="Between 8 and 20 characters"
                      required>
+                     <div class="error"></div>
                 </div>
                 <div class="form-row">
                     <label for="pwd-repeat">Confirm Password</label>
@@ -83,7 +100,9 @@
                      name="pwd-repeat"
                      minlength="8"
                      maxlength="20"
+                     placeholder="Repeat password"
                      required>
+                     <div class="error"></div>
                 </div>
             </form>
         </div>
@@ -91,7 +110,7 @@
             <button class="create-btn" form="sign-up-form">
                 Create Account
             </button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p class="already">Already have an account? <a href="">Log in</a></p>
         </div>
         <footer>
             <p>lsnprt &copy; 2023</p>
